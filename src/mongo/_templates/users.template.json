@@ -1,0 +1,122 @@
+[
+    {
+        "login": "admin",
+        "password": "admin",
+        "role": "admin"
+    },
+    {
+        "login": "doctor",
+        "password": "doctor",
+        "role": "doctor"
+    },
+    {
+        "login": "patient",
+        "password": "patient",
+        "role": "patient"
+    },
+    {
+        "login": "doktorek",
+        "password": "prawilny",
+        "role": "doctor"
+    },
+    {
+        "login": "doktorBezUprawnien",
+        "password": "jakRowerzystaBezUprawnien",
+        "role": "doctor"
+    },
+    {
+        "login": "Brooke",
+        "password": "1234",
+        "role": "doctor"
+    },
+    {
+        "login": "elekarz",
+        "password": "@als",
+        "role": "doctor"
+    },
+    {
+        "login": "monicaC",
+        "password": "anteny",
+        "role": "doctor"
+    },
+    {
+        "login": "eve63",
+        "password": "eve63",
+        "role": "doctor"
+    },
+    {
+        "login": "pawelKrakow",
+        "password": "wawel",
+        "role": "doctor"
+    },
+    {
+        "login": "leo_z_tarnowa",
+        "password": "ananas@66",
+        "role": "doctor"
+    },
+    {
+        "login": "doktorro",
+        "password": "paprykarz_szczecisnski",
+        "role": "doctor"
+    },
+    {
+        "login": "medicziKasia",
+        "password": "traktor77",
+        "role": "doctor"
+    },
+    {
+        "login": "lolek",
+        "password": "bolek",
+        "role": "doctor"
+    },
+    {
+        "login": "patient",
+        "password": "admin",
+        "role": "patient"
+    },
+    {
+        "login": "wpiszLogin",
+        "password": "admin",
+        "role": "patient"
+    },
+    {
+        "login": "synJacka",
+        "password": "admin",
+        "role": "patient"
+    },
+    {
+        "login": "Hulk",
+        "password": "admin",
+        "role": "patient"
+    },
+    {
+        "login": "SpeedyGonzales",
+        "password": "admin",
+        "role": "patient"
+    },
+    {
+        "login": "Mark",
+        "password": "admin",
+        "role": "patient"
+    },
+    {
+        "login": "Robinio",
+        "password": "admin",
+        "role": "patient"
+    },
+    {
+        "login": "Jess",
+        "password": "admin",
+        "role": "patient"
+    },
+    {
+        "login": "Heisenberg",
+        "password": "Werner",
+        "role": "patient"
+    },
+    {
+        "login": "Jesse",
+        "password": "admin",
+        "role": "patient"
+    }
+]

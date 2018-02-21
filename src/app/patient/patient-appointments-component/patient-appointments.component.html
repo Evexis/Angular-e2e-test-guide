@@ -1,0 +1,33 @@
+<app-menu></app-menu>
+<div class='content'>
+    <div *ngIf="canView">
+        <div><span><button class="passed-or-comming-buttons" (click)="setCommingAppts()" [ngStyle]="setButtonsStyle('comming')">comming appointments</button></span>
+            <span><button class="passed-or-comming-buttons" (click)="setPassedAppts()" [ngStyle]="setButtonsStyle('passed')">passed appointments</button></span></div>
+
+        <div *ngFor='let visit of passedButton ? passedAppts : commingAppts, let i=index'>
+            <div *ngIf="i==0 || (i!=0 && (passedButton ? passedAppts[i] : commingAppts[i]).date.day!=(passedButton ? passedAppts[i-1] : commingAppts[i-1]).date.day)">
+                <div class="new-day">{{visit.date.day
+                    < 10 ? "0" + visit.date.day : visit.date.day}}.{{visit.date.month < 10 ? "0" + visit.date.month : visit.date.month}}.{{visit.date.year}}
+                        </div>
+                        <div class="appointment-list">
+                            <span>{{visit.date.hour}}</span>
+                            <span style="color:#660000; font-weight:bold">dr {{passedButton ? visit.name  : visit.name}}</span>
+                            <span style="color:#004d80">{{passedButton ? visit.spec  : visit.spec}}</span><br>
+                            <span>{{visit.patient.description}}</span>
+                        </div>
+                </div>
+
+                <div *ngIf="i!=0 && (passedButton ? passedAppts[i] : commingAppts[i]).date.day==(passedButton ? passedAppts[i-1] : commingAppts[i-1]).date.day">
+                    <div class="appointment-list">
+
+                        <span>{{visit.date.hour}}</span>
+                        <span style="color:#660000; font-weight:bold">dr {{passedButton ? visit.name  : visit.name}}</span>
+                        <span style="color:#004d80">{{passedButton ? visit.spec  : visit.spec}}</span><br>
+                        <span>{{visit.patient.description}}</span>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>

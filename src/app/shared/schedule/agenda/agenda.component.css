@@ -1,0 +1,64 @@
+.schedule{
+    margin-top:2%;
+    margin-left:15%;
+    margin-right:15%;
+    /*border: 1px solid cyan;*/
+    font-size:14px;          
+}
+
+.minutes {
+    display: grid;
+    grid-template-columns: 0.2fr 0.4fr 0.4fr 0.4fr 0.4fr; 
+}
+
+.minutes div{
+    border-top: none;
+    border-left:none;
+    border-right:none;
+    border-bottom: 1px solid #002e4d;
+    text-align: center;
+    color: #008ae6;
+
+}
+.minutes div:first-child{
+    border-bottom: 1px solid #002e4d;
+    border-right: 1px solid #002e4d;
+    background-color: white;
+
+}
+
+.hours {
+    display: grid;
+    grid-template-columns: 0.2fr 0.4fr 0.4fr 0.4fr 0.4fr;
+    margin-bottom:0px;
+    text-align: center;
+
+}
+
+.hours div{
+    border: 1px solid  #fafafa;
+    text-align: center;
+    padding:2%;
+    background-color: white;
+    color: white;
+}               
+
+.hours div:first-child{
+    border-top: none;
+    border-left:none;
+    border-bottom:none;
+    border-right: 1px solid #002e4d;
+    text-align: center;
+    padding:3%;
+    color: #008ae6;
+    background-color: white;
+}
+
+.hours div button {
+    color:white;
+    border: none;
+    font-family: 'Quicksand', sans-serif;
+    font-size:16px;
+    cursor: pointer;
+    outline:0;
+}

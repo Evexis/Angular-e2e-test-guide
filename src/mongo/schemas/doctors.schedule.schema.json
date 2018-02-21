@@ -1,0 +1,34 @@
+{
+    "login": "",
+    "workingHours": {
+        "monday": {
+            "start": "",
+            "end": ""
+        },
+        "tuesday": {
+            "start": "",
+            "end": ""
+        },
+        "wednesday": {
+            "start": "",
+            "end": ""
+        },
+        "thursday": {
+            "start": "",
+            "end": ""
+        },
+        "friday": {
+            "start": "",
+            "end": ""
+        },
+        "saturday": {
+            "start": "",
+            "end": ""
+        },
+        "sunday": {
+            "start": "",
+            "end": ""
+        }
+    },
+    "holiday": []  
+}

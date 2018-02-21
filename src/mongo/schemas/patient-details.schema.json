@@ -1,0 +1,14 @@
+{
+    "login": "",
+    "firstName": "",
+    "lastName": "",
+    "gender": "",
+    "phone": "",
+    "email": "",
+    "dateOfBirth": {
+        "year": "",
+        "month": "",
+        "day": ""
+    },
+    "PESEL": ""
+}

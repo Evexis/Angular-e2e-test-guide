@@ -1,0 +1,100 @@
+<app-menu></app-menu>
+
+<div class='content'>
+    <div class='filter'>
+        <div>filter by: </div>
+        <div>doctors</div>
+
+        <div class="checkbox">
+            <input type="checkbox" [(ngModel)]="onlyDoctors" id="checkbox" name="" />
+            <label for="checkbox"></label>
+        </div>
+
+
+        <div>patients</div>
+        <div class="checkbox">
+            <input type="checkbox" [(ngModel)]="onlyPatients" id="checkbox2" name="" />
+            <label for="checkbox2"></label>
+        </div>
+    </div>
+
+    <div class='search-style'>
+        <div>search: </div>
+        <div><input type='text' class='search' [(ngModel)]='doctorFilter' placeholder="user's name" />
+        </div>
+    </div>
+
+    <div class="table-name"> LIST OF {{onlyDoctors && onlyPatients ? "USERS" : (onlyPatients && !onlyDoctors? "PATIENTS" : (!onlyPatients && onlyDoctors
+        ? "DOCTORS" : "NONE"))}}</div>
+
+    <div class='table-header'>
+        <div class='table-header-content'>
+            <div>USER'S NAME</div>
+            <div>LOGIN</div>
+            <div>ROLE</div>
+        </div>
+    </div>
+
+
+    <div *ngFor='let user of users 
+                | firstlastNameFilter:doctorFilter  
+                | onlyDoctorsFilter:onlyDoctors  
+                | onlyPatientsFilter:onlyPatients 
+                | paginate: { itemsPerPage: 10, currentPage: p }'>
+        <table class='table-of-doctor' *ngIf='users && users.length' [ngStyle]='{"background-color" : (user === selectedUser) ? "#003d66" : "#fafafa",
+                                 "border-color": (user === selectedUser) ? "#003d66" : "#fafafa"} '>
+            <thead>
+                <tr>
+                    <td>
+                        <button class='doctor-button' [class.selected]='user === selectedUser' (click)='onSelect(user)'>
+
+
+<div class='button-label'>
+    <div>
+     {{user.firstName}} {{user.lastName}}
+    </div >
+    <div>
+        {{user.login}}
+    </div>
+    <div>
+            <div  [ngStyle]='{"color" : (user.role!="doctor") ? "#660000" : "#ffb84d"}'> {{user.role}}</div>
+    </div >
+</div>
+
+</button></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="shortDetails" *ngIf='user === selectedUser'>
+                    <table class='show-details'>
+                        <tr>
+                            <td class='details-of-doctor'>
+                                <p><strong>PESEL: </strong>{{user.PESEL}}</p>
+                                <p><strong>Gender: </strong>{{user.gender}}</p>
+                                <p><strong>Age: </strong>{{user.age}}</p>
+                                <p><strong>Phone: </strong>{{user.phone}}</p>
+                                <p><strong>Email: </strong>{{user.email}}</p>
+                                <p><strong>Address: </strong>{{user.address.street}}, {{user.address.postcode}} {{user.address.city}}</p>
+
+                                <div *ngIf='user.role=="doctor"'>
+                                    <p><strong>Specializations: </strong>
+                                        <span *ngFor='let spec of user.specializations' class='single-specialization'>
+            {{spec.specialization}} {{user.specializations[user.specializations.length-1].specialization==spec.specialization ? ' ' : ','}} 
+            </span> </p>
+                                </div>
+
+
+                            </td>
+                            <td class='user-edit'><button class='user-edit-button' (click)='editUser()' [disabled]='userRole=="admin" ? false : (selectedUser.role=="doctor" ? true : false)'>edit {{user.role}}</button></td>
+                            <td class='user-edit'><button class='user-edit-button' (click)='checkSchedule()'>check {{user.role=="doctor" ? "schedule" : "appointments"}}</button></td>
+                            <td class='user-edit'><button class='user-edit-button' style="background-color: #660000" (click)='deleteUser()' [disabled]='userRole=="admin" ? false : true'>delete {{user.role}}</button></td>
+                        </tr>
+                    </table>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="pagination">
+        <pagination-controls class="pagination" (pageChange)="p = $event"></pagination-controls>
+    </div>
+</div>

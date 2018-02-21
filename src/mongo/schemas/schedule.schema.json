@@ -1,0 +1,15 @@
+{
+    "login": "",
+    "date": {
+        "year":"",
+        "month": "",
+        "day": "",
+        "hour": ""
+    },
+    "patient": {
+        "login": "",
+        "firstName": "",
+        "lastName": "",
+        "description": ""  
+    }
+}

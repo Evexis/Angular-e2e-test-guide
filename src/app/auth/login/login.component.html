@@ -1,0 +1,29 @@
+<div class='container-of-login'>
+    <div>
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+            <div class='table-of-login'>
+
+                <div><label for="login">login: </label></div>
+                <div><input class='input-style' type='text' formControlName="login" placeholder="login">
+                    <div class='info' *ngIf='loginForm.get("login").errors && (loginForm.get("login").touched || loginForm.get("login").dirty)'>
+                        <div class='to-fill' [hidden]="!loginForm.get('login').errors.required">Login is required </div>
+                    </div>
+                </div>
+
+                <div><label for="password">password: </label></div>
+                <div><input class='input-style' type='password' formControlName="password" placeholder="password">
+                    <div class='info' *ngIf='loginForm.get("password").errors && (loginForm.get("password").touched || loginForm.get("password").dirty)'>
+                        <div class='to-fill' [hidden]="!loginForm.get('password').errors.required">Password is required </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div><button type="submit" class='check-button' [disabled]="!loginForm.valid">log in</button></div>
+
+        </form>
+        <div *ngIf='invalid' class='invalid'>Wrong login or password!</div>
+        Don't have account yet? <a [routerLink]="['/register']">Sign up </a>
+    </div>
+</div>
+

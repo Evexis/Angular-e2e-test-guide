@@ -1,0 +1,31 @@
+<div *ngIf="canView">
+  <div style="font-size:20px">{{scheduleService.doctor[0].firstName}} {{scheduleService.doctor[0].lastName}}'s schedule</div>
+  <div class='schedule' >
+    <div class='minutes'>
+      <div></div>
+      <div *ngFor="let min of minutes; let i = index">{{min}} </div>
+
+    </div>
+
+    <div class='hours' *ngFor="let hour of dateArrays.hoursArray; let i = index" >
+
+      <div>{{hour}} </div>
+
+      <div [ngStyle]='setButtons(hour, "00")'>
+        <button (click)='selectAppointment(hour, "00")' [ngStyle]='setButtons(hour, "00")'>{{hour}}:00 </button>
+      </div>
+
+      <div [ngStyle]='setButtons(hour, "15")'>
+        <button (click)='selectAppointment(hour, "15")' [ngStyle]='setButtons(hour, "15")'>{{hour}}:15</button>
+      </div>
+
+      <div [ngStyle]='setButtons(hour, "30")'>
+        <button (click)='selectAppointment(hour, "30")' [ngStyle]='setButtons(hour, "30")'>{{hour}}:30 </button></div>
+
+      <div [ngStyle]='setButtons(hour, "45")'>
+        <button (click)='selectAppointment(hour, "45")' [ngStyle]='setButtons(hour, "45")'>{{hour}}:45 </button> 
+      </div>
+
+    </div>
+</div>
+</div>

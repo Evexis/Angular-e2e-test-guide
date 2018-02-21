@@ -1,0 +1,28 @@
+.content {
+    padding: 2%;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    font-family: 'Quicksand', sans-serif;
+    color:#002e4d;
+    font-size:26px;
+    /*height:1500px;*/
+    box-shadow: 0 4px 20px 0 rgba(0, 46, 77, 0.2), 0 6px 100px 0 rgba(0, 46, 77, 0.2);
+    /*border: 1px solid red;*/
+}
+
+.content-divide{
+    display:grid;
+    grid-template-columns: 0.75fr 1fr;
+    /*border: 1px solid green;*/
+}
+
+.content-divide div {
+        /*border: 1px solid yellow;*/
+}
+
+
+.content-divide .marged {
+    grid-row-end: span 2;
+  /*border: 1px solid violet;*/
+}

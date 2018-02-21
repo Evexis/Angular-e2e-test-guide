@@ -1,0 +1,91 @@
+.calender{
+    /*border:2px solid red;*/
+    justify-content:center; 
+    margin-left: 8%;
+    margin-right: 8%;
+    /*background-color: #fafafa;*/
+}
+
+.calender .month{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content:center; 
+    color: #660000;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.calender .year-with-arrows {
+    display:grid;
+    grid-template-columns: 20% 60% 20%;
+}
+
+ .arrow{
+    font-size: 40px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.arrow:last-child{
+    text-align: right;
+}
+
+.calender .year-with-arrows .year{
+    width: 100%;
+    align-self: center;
+    color: #004d80;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 25px;
+
+    
+}
+
+.calender .days{
+    width:100%;
+    display: grid;
+    grid-template-columns: 14.28% 14.28% 14.28% 14.28% 14.28% 14.28% 14.28%; 
+    text-align: center;
+    border-bottom: 1px solid #004d80;
+
+}
+
+.calender .days div{
+    font-size: 20px;
+    color: #008ae6;
+    padding-bottom:10%;
+}
+
+.calender .day{
+    width:100%;
+    display: grid;
+    grid-template-columns: 14.28% 14.28% 14.28% 14.28% 14.28% 14.28% 14.28%; 
+
+}
+
+.calender .day div {
+    font-size: 20px;
+    color: #004d80;
+    width: 95px;
+    height: 70px;
+
+}
+.calender .day div button{
+    width:55px;
+    height:55px;
+    font-size: 20px;
+    color: #004d80;
+    text-decoration: none;
+    background-color: white;
+    border:none;
+    cursor: pointer;
+    font-family: 'Quicksand', sans-serif;
+    outline:0;
+}
+
+.calender .day div button:hover{
+ opacity:0.3;
+}

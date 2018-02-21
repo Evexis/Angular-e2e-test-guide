@@ -1,0 +1,39 @@
+.content {
+    padding: 2%;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    font-family: 'Quicksand', sans-serif;
+    color:#002e4d;
+    font-size:26px;
+    box-shadow: 0 4px 20px 0 rgba(0, 46, 77, 0.2), 0 6px 100px 0 rgba(0, 46, 77, 0.2);
+}
+
+.passed-or-comming-buttons{
+    color: #004d80;
+    font-size: 18px;
+    /*font-weight: bold;*/
+    font-family: 'Quicksand', sans-serif;
+    background-color:white;
+    border:none;
+    cursor: pointer;
+    border: 1px solid #004d80;
+    border-radius: 5px;
+    outline:none;
+    padding:1%;
+}
+
+.new-day{
+    /*border-bottom: 1px solid #004d80;*/
+    margin-top: 2%;
+    color: #004d80;
+    /*text-decoration: underline;*/
+}
+
+.appointment-list{
+    /*background-color: #fafafa;*/
+    /*border-radius: 12px;*/
+    padding: 1.5%;
+    color: #333333;
+    font-size: 20px;
+}

@@ -1,0 +1,225 @@
+// its all red because ts'd better apostrophes and json'd better quotation mark.
+[
+    {
+        'login': 'doktorBezUprawnien',
+        'firstName': 'John',
+        'lastName': 'Smith',
+        'gender': 'male',
+        'age': 37,
+        'phone': '+48 123456789',
+        'email': 'doktorBezUprawnien@gmail.com',
+        'address': {
+            'street': 'Łąkowa 34',
+            'postcode': '39-111',
+            'city': 'Miasto W'
+        },
+        'specializations': [{'specialization': 'kości'}],
+        "workingHours": {},
+        "holiday": [{}]
+    },
+    {
+        'login': 'doctor',
+        'firstName': 'James',
+        'lastName': 'Lovelock',
+        'gender': 'male',
+        'age': 55,
+        'phone': '+48 123465689',
+        'email': 'jLovelock@gmail.com',
+        'address': {
+            'street': 'Love 66',
+            'postcode': '595-223',
+            'city': 'Paris'
+        },
+        'specializations': [{'specialization':'logopeda'}],
+        "workingHours": {
+            "monday": {
+                "start": "8:00",
+                "end": "14:00"
+            },
+            "tuesday": {
+                "start": "7:30",
+                "end": "15:00"
+            },
+            "wednesday": {
+                "start": "7:00",
+                "end": "18:00"
+            },
+            "thursday": {
+                "start": "12:00",
+                "end": "20:00"
+            },
+            "friday": {
+                "start": "13:00",
+                "end": "23:00"
+            },
+            "saturday": {
+                "start": "",
+                "end": ""
+            },
+            "sunday": {
+                "start": "",
+                "end": ""
+            }
+        } 
+    },
+    {
+        'login': 'doktorek',
+        'firstName': 'Marcus',
+        'lastName': 'Will',
+        'gender': 'male',
+        'age': 32,
+        'phone': '+48 773456789',
+        'email': 'doktorek@gmail.com',
+        'address': {
+            'street': 'Green 123',
+            'postcode': '25-083',
+            'city': 'Masecziuset'
+        },
+        'specializations': [{'specialization':'od uszów'}],
+        "workingHours": {}
+    },
+    {
+        'login': 'Brooke',
+        'firstName': 'Brooke',
+        'lastName': 'Winchester',
+        'gender': 'male',
+        'age': 81,
+        'phone': '+23 322567289',
+        'email': 'BrookeDoctor@gmail.com',
+        'address': {
+            'street': 'Piernikowa 33',
+            'postcode': '22-083',
+            'city': 'Carcas'
+        },
+        'specializations': [{'specialization':'internista'}],
+        "workingHours": {}
+    },
+    {
+        'login': 'elekarz',
+        'firstName': 'Tim',
+        'lastName': 'Cole',
+        'gender': 'male',
+        'age': 46,
+        'phone': '+11 773452289',
+        'email': 'tim-cole@gmail.com',
+        'address': {
+            'street': 'Lniana 76',
+            'postcode': '22-445',
+            'city': 'Colorado'
+        },
+        'specializations': [{'specialization':'alergolog'}],
+        "workingHours": {} 
+     },
+    {
+        'login': 'monicaC',
+        'firstName': 'Monica',
+        'lastName': 'C',
+        'gender': 'female',
+        'age': 27,
+        'phone': '+77 222116789',
+        'email': 'monicaC@gmail.com',
+        'address': {
+            'street': 'Lukrowa 66',
+            'postcode': '211-7783',
+            'city': 'Toruń'
+        },
+        'specializations': [{'specialization':'pediatra'}],
+        "workingHours": {}   
+    },
+    {
+        'login': 'eve63',
+        'firstName': 'Eva',
+        'lastName': 'Limone',
+        'gender': 'female',
+        'age': 62,
+        'phone': '+48 773456789',
+        'email': 'doktorek@gmail.com',
+        'address': {
+            'street': 'Limonkowa 24',
+            'postcode': '35-083',
+            'city': 'Floryda'
+        },
+        'specializations': [{'specialization':'ginekolog'}],
+        "workingHours": {}  
+     },
+    {
+        'login': 'pawelKrakow',
+        'firstName': 'Pawel',
+        'lastName': 'Kowalski',
+        'gender': 'male',
+        'age': 37,
+        'phone': '+48 123454755',
+        'email': 'pawelKrakow@gmail.com',
+        'address': {
+            'street': 'Słowackiego 45',
+            'postcode': '30-083',
+            'city': 'Kraków'
+        },
+        'specializations': [{'specialization':'kardiolog'}],
+        "workingHours": {}
+    },
+    {
+        'login': 'leo_z_tarnowa',
+        'firstName': 'Leopold',
+        'lastName': 'Brzytwa',
+        'gender': 'male',
+        'age': 31,
+        'phone': '+48 133456789',
+        'email': 'leo@gmail.com',
+        'address': {
+            'street': 'Ładna 11',
+            'postcode': '35-283',
+            'city': 'Tarnów'
+        },
+        'specializations': [{'specialization':'kardiolog'}],
+        "workingHours": {}
+    },
+    {
+        'login': 'doktorro',
+        'firstName': 'Pedro',
+        'lastName': 'El Gonzalez',
+        'gender': 'male',
+        'age': 49,
+        'phone': '+18 773234789',
+        'email': 'doktorro@gmail.com',
+        'address': {
+            'street': 'Naczosów 23',
+            'postcode': '25-083',
+            'city': 'Cancun'
+        },
+        'specializations': [{'specialization':'okulista'}, {'specialization':'laryngolog'}],
+        "workingHours": {}
+    },
+    {
+        'login': 'medicziKasia',
+        'firstName': 'Katarzyna',
+        'lastName': 'Medycejska',
+        'gender': 'female',
+        'age': 39,
+        'phone': '+48 73131789',
+        'email': 'mediczi@gmail.com',
+        'address': {
+            'street': 'Paryska 55',
+            'postcode': '15-0443',
+            'city': 'Florencja'
+        },
+        'specializations': [{'specialization':'stomatolog'}],
+        "workingHours": {}
+    },
+    {
+        'login': 'lolek',
+        'firstName': 'Leonidas',
+        'lastName': 'Włodarczyk',
+        'gender': 'male',
+        'age': 65,
+        'phone': '+18 973346789',
+        'email': 'lolek@gmail.com',
+        'address': {
+            'street': 'Fiołkowa 13',
+            'postcode': '45-033',
+            'city': 'Gdańsk'
+        },
+        'specializations': [{'specialization':'chirurg'}, {'specialization':'od uszów'}],
+        "workingHours": {}    
+    }
+]

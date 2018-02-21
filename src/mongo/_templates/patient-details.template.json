@@ -1,0 +1,147 @@
+[
+    {
+        "login": "patient",
+        "firstName": "Leopold",
+        "lastName": "Staff",
+        "gender": "male",
+        "phone": "+48 666253442",
+        "email": "b.f.staff@yahoo.lol",
+        "dateOfBirth": {
+            "year": 1977,
+            "month": "August",
+            "day": 24
+        },
+        "PESEL": "77082410610"
+    },
+    {
+        "login": "wpiszLogin",
+        "firstName": "Zygfryd",
+        "lastName": "Siwonogi",
+        "gender": "male",
+        "phone": "124324235",
+        "email": "mail@mainNa5minut.pl",
+        "dateOfBirth": {
+            "year": 1902,
+            "month": "December",
+            "day": 31
+        },
+        "PESEL": "02123102319"
+    },
+    {
+        "login": "synJacka",
+        "firstName": "Skalbimierz",
+        "lastName": "Uważny",
+        "gender": "male",
+        "phone": "124524887",
+        "email": "skalbimerz.uwazy@gmial.com",
+        "dateOfBirth": {
+            "year": 1982,
+            "month": "March",
+            "day": 11
+        },
+        "PESEL": "82031118433"
+    },
+    {
+        "login": "Hulk",
+        "firstName": "Bruce",
+        "lastName": "Banner",
+        "gender": "male",
+        "phone": "102988392",
+        "email": "mark@onet.pl",
+        "dateOfBirth": {
+            "year": 1982,
+            "month": "May",
+            "day": 2
+        },
+        "PESEL": "62050211094"
+    },
+    {
+        "login": "Mark",
+        "firstName": "Marek",
+        "lastName": "Markowicz",
+        "gender": "male",
+        "phone": "102988372",
+        "email": "hugeandgreen@stark.industries.com",
+        "dateOfBirth": {
+            "year": 1962,
+            "month": "May",
+            "day": 2
+        },
+        "PESEL": "82050218792"
+    },
+    {
+        "login": "Robinio",
+        "firstName": "Robert",
+        "lastName": "Górski",
+        "gender": "male",
+        "phone": "102118372",
+        "email": "nnfksjths@o2.com",
+        "dateOfBirth": {
+            "year": 1993,
+            "month": "May",
+            "day": 7
+        },
+        "PESEL": "93050816835"
+    },
+    {
+        "login": "Jess",
+        "firstName": "Justyna",
+        "lastName": "Franiewska",
+        "gender": "female",
+        "phone": "118268372",
+        "email": "jess_92@gmail.com",
+        "dateOfBirth": {
+            "year": 1992,
+            "month": "October",
+            "day": 3
+        },
+        "PESEL": "92100308786"
+    },
+    {
+        "login": "Heisenberg",
+        "firstName": "Walter",
+        "lastName": "White",
+        "gender": "male",
+        "phone": "118200372",
+        "email": "babyblue@gmail.com",
+        "dateOfBirth": {
+            "year": 1959,
+            "month": "September",
+            "day": 7
+        },
+        "PESEL": "59090719558"
+    },
+    {
+        "login": "Jesse",
+        "firstName": "Jesse",
+        "lastName": "Pinkman",
+        "gender": "male",
+        "phone": "118200372",
+        "email": "yeahb_tch@gmail.com",
+        "dateOfBirth": {
+            "year": 1984,
+            "month": "September",
+            "day": 17
+        },
+        "PESEL": "84091713058"
+    },
+    {
+        "login": "SpeedyGonzales",
+        "firstName": "Wacław",
+        "lastName": "Pośpieszny",
+        "gender": "male",
+        "phone": "382910928",
+        "email": "hjgfs@interia.eu",
+        "dateOfBirth": {
+            "year": 1983,
+            "month": "February",
+            "day": 21
+        },
+        "PESEL": "83022114618"
+    }
+]
+
+
+
+
+
