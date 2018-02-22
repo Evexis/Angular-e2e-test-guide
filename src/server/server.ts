@@ -32,7 +32,7 @@ app.route('/user-details/:param?')
     .post(service.getUser)
     .put(service.updateUser);
 app.delete('/delete-user/:login', service.deleteUser);
-app.post('/insert-user/:param', );
+app.post('/insert-user/:param', service.insertUser);
 
 // ------------- schedule -----------------------------------------------------------------------////////////////////////
 app.route('/schedule/:param')
