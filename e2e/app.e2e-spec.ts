@@ -71,7 +71,6 @@ describe('doktorki App', function() {
   });
 
   it('registration', () => {
-    page.goToRegistragionPage();
     page.fillRegistrationForm();
     expect(browser.getCurrentUrl()).toEqual('http://localhost:4200/login');
   });
